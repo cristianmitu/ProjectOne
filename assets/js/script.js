@@ -1,13 +1,21 @@
-fetch("https://api.themoviedb.org/3/movie/550?api_key=7d8c2f046707227f388808b36dce76d5")
-.then(response => response.json())
-.then(data => console.log(data))
-
 let birthdayEl = document.querySelector("#birthday");
 let submitButtonEl = document.querySelector("#birthdaySubmit");
 
+// Get input date when submit button clicked
 submitButtonEl.addEventListener("click", function(event){
     event.preventDefault();
     let birthdayDate = birthdayEl.value;
-    console.log(birthdayDate);
+    
+    fetch("https://api.themoviedb.org/3/discover/movie?api_key=7d8c2f046707227f388808b36dce76d5&language=en-US&sort_by=popularity.desc&include_adult=false&page=1&release_date.gte=" + birthdayDate)
+    .then(response => response.json())
+    .then(data => console.log(data))
 });
+
+
+
+
+
+
+
+
 
