@@ -1,13 +1,31 @@
-const cristianYoutubeId = "440656126246-0of53l90ad1v9hg6v1strg68kdm7uadf.apps.googleusercontent.com";
-const cristianYoutubeKey = "AIzaSyB9bVlqEMXWP5P9PzhhouoGLloX2-sOy6A";
+// let birthdayEl = document.querySelector("#birthday");
+// let submitButtonEl = document.querySelector("#birthdaySubmit");
+// let filmResultsEl = document.querySelector("#filmResults");
 
-const cristianMovieKey = "7d8c2f046707227f388808b36dce76d5";
+// // Get input date when submit button clicked
+// submitButtonEl.addEventListener("click", function(event){
+//     event.preventDefault();
+//     let birthdayDate = birthdayEl.value;
+    
+//     fetch("https://api.themoviedb.org/3/discover/movie?api_key=7d8c2f046707227f388808b36dce76d5&language=en-US&sort_by=popularity.desc&include_adult=false&page=1&release_date.gte=" + birthdayDate)
+//     .then(response => response.json())
+//     .then(data => {
+//     console.log(data.results[0].title);
 
-fetch("https://api.themoviedb.org/3/movie/550?api_key=7d8c2f046707227f388808b36dce76d5")
-.then(response => response.json())
-.then(data => console.log(data));
+//     for (let i = 0; i < 11; i++) {
+//         let filmTitle = data.results[i].title;
+//         filmResultsEl.innerHTML += `<p>${filmTitle}</p>`;
+        
+//     }
+    
+//  })
+// });
 
-fetch("https://youtube.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=5&key=AIzaSyB9bVlqEMXWP5P9PzhhouoGLloX2-sOy6A")
-.then(response => response.json())
-.then(data => console.log(data))
+
+
+
+
+
+
+
 
