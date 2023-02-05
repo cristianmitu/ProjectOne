@@ -102,6 +102,7 @@ body{
     align-items: center;
     justify-content: center;   
     margin: 10px;
+    background-color: var(--main-bg-color);
 }
 #previous-header{
     text-align: center;
@@ -119,4 +120,17 @@ body{
 }
 #footer-list li img{
     border-radius: 25px;
+}
+#modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-bg-color);
+}
+
+#modal-body-card{
+    background-color: var(--main-bg-color);
+}
+#modal-body-card ul li{
+    background-color: var(--main-bg-color);
 }
