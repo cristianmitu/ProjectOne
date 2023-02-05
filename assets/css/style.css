@@ -75,12 +75,15 @@ body{
 }
 
 #footer{
+    display: flex;
     background-color: var(--main-bg-color);
     margin: 10px 10px 10px 10px;
     padding: 10px 10px 10px 10px;
     border-radius: 5px;
     color:var(--text-color);
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 #previous-searches{  
     text-align: center;
@@ -104,4 +107,16 @@ body{
     text-align: center;
     margin: 0 auto;
     padding: 0 auto;
+}
+#footer-list{
+    display:inline;
+    text-decoration: none;
+    margin-top: 5px;
+}
+#footer-list li{
+    display: inline;
+    margin-left: -10px;    
+}
+#footer-list li img{
+    border-radius: 25px;
 }
