@@ -45,6 +45,7 @@ body{
     margin: 0 auto;
     padding: 0 auto;    
     color: var(--text-color);
+
 }
 
 #form{
@@ -59,6 +60,23 @@ body{
     border-color: var(--text-color);
     /* opacity: 0.9; */
 }
+
+
+}
+
+#form{
+    align-items: center;
+    text-align: center;
+    /* opacity: 0.7; */
+}
+#submit-button{
+    color: var(--text-color);
+    border-radius: 20px;
+    background-color: var(--buttons-color);
+    border-color: var(--text-color);
+    /* opacity: 0.9; */
+}
+
 
 #header #navbar{
     background-color: var(--main-bg-color);
@@ -133,4 +151,10 @@ body{
 }
 #modal-body-card ul li{
     background-color: var(--main-bg-color);
+
+}
+
+.movie-image {
+    width: 100px;
+    height: 100px;
 }
