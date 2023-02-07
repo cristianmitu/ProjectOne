@@ -1,6 +1,11 @@
 let birthdayEl = document.querySelector(".birthday");
 let submitButtonEl = document.querySelector("#submit-button");
 let filmResultsEl = document.querySelector("#filmResults");
+let modalImageEl = document.querySelector("#modal-image");
+let movieTitleEl = document.querySelector(".card-title");
+let modalDateEl = document.querySelector(".modal-title");
+let filmOverviewEl = document.querySelector("#film-overview");
+
 
 // Get input date when submit button clicked
 submitButtonEl.addEventListener("click", function(event){
@@ -14,27 +19,31 @@ submitButtonEl.addEventListener("click", function(event){
         console.log(birthdayDate);
         console.log(data);
 
-    for (let i = 0; i < 3; i++) {
-        let filmTitle = data.results[i].title;
-        let popularity = data.results[i].popularity;
-        let releaseDate = data.results[i].release_date;
-        let posterUrl = "https://image.tmdb.org/t/p/original/"
-        let posterLink = data.results[i].poster_path;
-        let fullPoster = "";
+    
+    let filmTitle = data.results[0].title;
+    let overview = data.results[0].overview;
+    let releaseDate = data.results[0].release_date;
+    let posterUrl = "https://image.tmdb.org/t/p/original/"
+    let posterLink = data.results[0].poster_path;
+    let fullPoster = "";
 
-        if (posterLink == null) {
-            fullPoster = "/../assets/images/No_Image_Available.jpg";
-        } else {
-            fullPoster = posterUrl + posterLink;
+    if (posterLink == null) {
+        fullPoster = "/../assets/images/No_Image_Available.jpg";
+    } else {
+        fullPoster = posterUrl + posterLink;
 
-        }
-        filmResultsEl.innerHTML += `<h2>${filmTitle}</h2>
-        <p>${popularity}</p>
-        <p>${releaseDate}</p>
-        <img class="movie-image" src="${fullPoster}">
-        `;
-        
     }
+    // filmResultsEl.innerHTML += `<h2>${filmTitle}</h2>
+    // <p>${popularity}</p>
+    // <p>${releaseDate}</p>
+    // <img class="movie-image" src="${fullPoster}">
+    // `;
+    
+
+    movieTitleEl.textContent = filmTitle;
+    modalImageEl.src = fullPoster;
+    modalDateEl.textContent = releaseDate;
+    filmOverviewEl.textContent = overview;
     
  })
 });
