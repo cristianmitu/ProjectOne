@@ -21,8 +21,8 @@ previousSearchesEl.innerHTML = "";
 
     for (let i = 0; i < oldFilms.length; i++) {
       previousSearchesEl.innerHTML +=
-      `<div class="card previous-cards" style="width: 18rem;">
-        <img class="card-img-top" src="${oldFilms[i].image}" alt="Card image cap">
+      `<div class="card previous-cards" style="width: 18rem; style="height 600">
+        <img class="card-img-top" style="height: 350px" src="${oldFilms[i].image}" alt="Card image cap">
         <div class="card-body">
           <p class="card-text">${oldFilms[i].filmOverview}</p>
         </div>
@@ -100,7 +100,7 @@ submitButtonEl.addEventListener("click", function(event){
       
       previousSearchesEl.innerHTML +=
       `<div class="card previous-cards" style="width: 18rem;">
-        <img class="card-img-top" src="${oldFilms[i].image}" alt="Card image cap">
+        <img class="card-img-top" style="height: 350px" src="${oldFilms[i].image}" alt="Card image cap">
         <div class="card-body">
           <p class="card-text">${oldFilms[i].filmOverview}</p>
         </div>
