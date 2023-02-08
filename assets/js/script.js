@@ -23,6 +23,7 @@ if (oldFilmsLocalStorage !== null) {
 
 previousSearchesEl.innerHTML = "";
 
+// Add localstorage data to previous searches
     for (let i = 0; i < oldFilms.length; i++) {
       previousSearchesEl.innerHTML +=
       `<div class="card previous-cards" style="width: 18rem; style="height 600">
