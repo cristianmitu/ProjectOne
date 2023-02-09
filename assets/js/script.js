@@ -1,4 +1,3 @@
-
 let birthdayEl = document.querySelector(".birthday");
 let submitButtonEl = document.querySelector("#submit-button");
 let modalImageEl = document.querySelector("#modal-image");
@@ -129,8 +128,6 @@ submitButtonEl.addEventListener("click", function(event){
       if (oldFilms.length > 6) {
         oldFilms.pop();
       }
-      console.log(oldFilms);
-      console.log(oldFilms.length);
   
       previousSearchesEl.innerHTML = "";
   
