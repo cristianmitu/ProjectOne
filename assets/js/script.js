@@ -32,19 +32,19 @@ previousSearchesEl.innerHTML = "";
             <p class="card-text">${oldFilms[i].date}</p>
           </div>
         <div class="card-body">
-          <p class="card-text">${oldFilms[i].filmOverview}</p>
+          <p class="card-text film-overview">${oldFilms[i].filmOverview}</p>
         </div>
         <div>
-          <p class="card-text">Important dates in history:</p>
+          <p class="card-text">Important dates in history:</p><br>
         </div>
         <div>
-          <p class="card-text">${oldFilms[i].event1Year}: ${oldFilms[i].event1}</p>
+          <p class="card-text fact">${oldFilms[i].event1Year}: ${oldFilms[i].event1}</p>
         </div>
         <div>
-            <p class="card-text">${oldFilms[i].event2Year}: ${oldFilms[i].event2}</p>
+            <p class="card-text fact">${oldFilms[i].event2Year}: ${oldFilms[i].event2}</p>
           </div>
           <div>
-            <p class="card-text">${oldFilms[i].event3Year}: ${oldFilms[i].event3}</p>
+            <p class="card-text fact">${oldFilms[i].event3Year}: ${oldFilms[i].event3}</p>
           </div>
       </div>`
     }
