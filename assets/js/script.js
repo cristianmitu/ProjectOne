@@ -26,7 +26,7 @@ previousSearchesEl.innerHTML = "";
 // Add localstorage data to previous searches
     for (let i = 0; i < oldFilms.length; i++) {
       previousSearchesEl.innerHTML +=
-      `<div class="card previous-cards" style="width: 18rem; style="height 600">
+      `<div class="card previous-cards col-sm-12 col-md-6 col-lg-4" style="height 600">
         <img class="card-img-top" style="height: 350px" src="${oldFilms[i].image}" alt="Card image cap">
         <div class="card-body">
             <p class="card-text">${oldFilms[i].date}</p>
@@ -137,7 +137,7 @@ submitButtonEl.addEventListener("click", function(event){
       for (let i = 0; i < oldFilms.length; i++) {
         
         previousSearchesEl.innerHTML +=
-        `<div class="card previous-cards" style="width: 18rem; style="height 600">
+        `<div class="card previous-cards col-sm-12 col-md-6 col-lg-4" style="height 600">
         <img class="card-img-top" style="height: 350px" src="${oldFilms[i].image}" alt="Card image cap">
         <div class="card-body">
             <p class="card-text">${oldFilms[i].date}</p>
