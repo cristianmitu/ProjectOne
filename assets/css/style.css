@@ -178,3 +178,8 @@ h1 {
     width: 100px;
     height: 100px;
 }
+#nav-img{
+    border-radius: 20px;
+    margin-top: -10px;
+    padding-top: 5px;
+}

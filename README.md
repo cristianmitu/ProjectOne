@@ -4,7 +4,7 @@
 
 User story:
 
-* As a user when I select a specific day from the calendar to have displayed on the screen what movie was released on that day , also another three notable events that happened on the same day
+* As a user when I select a specific day from the calendar I want to have displayed on the screen what movie was released on that day , also another three notable events that happened on the same day
 
 ## Technologies
 * We used Bootstrap so that our application will be responsive on different devices
