@@ -137,27 +137,27 @@ submitButtonEl.addEventListener("click", function(event){
       for (let i = 0; i < oldFilms.length; i++) {
         
         previousSearchesEl.innerHTML +=
-        `<div class="card previous-cards" style="width: 18rem;">
-          <img class="card-img-top" style="height: 350px" src="${oldFilms[i].image}" alt="Card image cap">
-          <div class="card-body">
+        `<div class="card previous-cards" style="width: 18rem; style="height 600">
+        <img class="card-img-top" style="height: 350px" src="${oldFilms[i].image}" alt="Card image cap">
+        <div class="card-body">
             <p class="card-text">${oldFilms[i].date}</p>
           </div>
-          <div class="card-body">
-            <p class="card-text">${oldFilms[i].filmOverview}</p>
+        <div class="card-body">
+          <p class="card-text film-overview">${oldFilms[i].filmOverview}</p>
+        </div>
+        <div>
+          <p class="card-text">Important dates in history:</p><br>
+        </div>
+        <div>
+          <p class="card-text fact">${oldFilms[i].event1Year}: ${oldFilms[i].event1}</p>
+        </div>
+        <div>
+            <p class="card-text fact">${oldFilms[i].event2Year}: ${oldFilms[i].event2}</p>
           </div>
           <div>
-            <p class="card-text">Important dates in history:</p>
+            <p class="card-text fact">${oldFilms[i].event3Year}: ${oldFilms[i].event3}</p>
           </div>
-          <div>
-            <p class="card-text">${oldFilms[i].event1Year}: ${oldFilms[i].event1}</p>
-          </div>
-          <div>
-            <p class="card-text">${oldFilms[i].event2Year}: ${oldFilms[i].event2}</p>
-          </div>
-          <div>
-            <p class="card-text">${oldFilms[i].event3Year}: ${oldFilms[i].event3}</p>
-          </div>
-        </div>`
+      </div>`
         localStorage.setItem('oldFilms', JSON.stringify(oldFilms));
       }
     
