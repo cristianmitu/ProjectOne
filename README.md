@@ -21,6 +21,9 @@ User story:
 
     ![alt text](./assets/screenshots/OnThatDay.png)
 
+    ## Live application link
+     - [Live application](https://cristianmitu.github.io/ProjectOne/)
+
     ## Acknowledgements
 
     * [Bootstrap 4.0](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
