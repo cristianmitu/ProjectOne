@@ -28,13 +28,13 @@ previousSearchesEl.innerHTML = "";
       `<div class="card previous-cards col-sm-12 col-md-6 col-lg-4" style="height 600">
         <img class="card-img-top" style="height: 350px" src="${oldFilms[i].image}" alt="Card image cap">
         <div class="card-body">
-            <p class="card-text">${oldFilms[i].date}</p>
+            <h2 class="card-text"><strong>${oldFilms[i].date}</strong></h2>
           </div>
         <div class="card-body">
           <p class="card-text film-overview">${oldFilms[i].filmOverview}</p>
         </div>
         <div>
-          <p class="card-text">Important dates in history:</p><br>
+          <h2 class="card-text"><strong>Important dates in history:</strong></h2><br>
         </div>
         <div>
           <p class="card-text fact">${oldFilms[i].event1Year}: ${oldFilms[i].event1}</p>
@@ -137,13 +137,13 @@ submitButtonEl.addEventListener("click", function(event){
         `<div class="card previous-cards col-sm-12 col-md-6 col-lg-4" style="height 600">
         <img class="card-img-top" style="height: 350px" src="${oldFilms[i].image}" alt="Card image cap">
         <div class="card-body">
-            <p class="card-text">${oldFilms[i].date}</p>
+            <h2 class="card-text"><strong>${oldFilms[i].date}</strong></h2>
           </div>
         <div class="card-body">
           <p class="card-text film-overview">${oldFilms[i].filmOverview}</p>
         </div>
         <div>
-          <p class="card-text">Important dates in history:</p><br>
+          <h2 class="card-text"><strong>Important dates in history:</strong></h2><br>
         </div>
         <div>
           <p class="card-text fact">${oldFilms[i].event1Year}: ${oldFilms[i].event1}</p>
