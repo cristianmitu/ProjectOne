@@ -17,6 +17,10 @@ User story:
 
     ![alt text](./assets/screenshots/proJectOneWireframe.png)
 
+    ## Screenshot of the live application
+
+    ![alt text](./assets/screenshots/OnThatDay.png)
+
     ## Acknowledgements
 
     * [Bootstrap 4.0](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
