@@ -26,7 +26,7 @@ previousSearchesEl.innerHTML = "";
 // Add localstorage data to previous searches
     for (let i = 0; i < oldFilms.length; i++) {
       previousSearchesEl.innerHTML +=
-      `<div class="card previous-cards" style="width: 18rem; style="height 600">
+      `<div class="card previous-cards col-sm-12 col-md-6 col-lg-2" style="width: 18rem; style="height 600">
         <img class="card-img-top" style="height: 350px" src="${oldFilms[i].image}" alt="Card image cap">
         <div class="card-body">
             <p class="card-text">${oldFilms[i].date}</p>
@@ -135,9 +135,9 @@ submitButtonEl.addEventListener("click", function(event){
       previousSearchesEl.innerHTML = "";
   
       for (let i = 0; i < oldFilms.length; i++) {
-        
+        oldFilms = oldFilms ;
         previousSearchesEl.innerHTML +=
-        `<div class="card previous-cards" style="width: 18rem;">
+        `<div class="card previous-cards col-sm-12 col-md-6 col-lg-2" style="width: 18rem;">
           <img class="card-img-top" style="height: 350px" src="${oldFilms[i].image}" alt="Card image cap">
           <div class="card-body">
             <p class="card-text">${oldFilms[i].date}</p>
@@ -158,7 +158,7 @@ submitButtonEl.addEventListener("click", function(event){
             <p class="card-text">${oldFilms[i].event3Year}: ${oldFilms[i].event3}</p>
           </div>
         </div>`
-        localStorage.setItem('oldFilms', JSON.stringify(oldFilms));
+        oldFilms.unshift(localStorage.setItem('oldFilms', JSON.stringify(oldFilms)));
       }
     
  })
